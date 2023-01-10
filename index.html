@@ -8,26 +8,103 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Sobre mi</li>
-            <li>Aptitudes</li>
-            <li>Proyectos</li>
-            <li>Contacto</li>
-            
+    <nav class="nav-bar">
+        <ul class="nav-bar-ul">
+            <li class="nav-bar-li">Sobre mi</li>
+            <li class="nav-bar-li">Aptitudes</li>
+            <li class="nav-bar-li">Proyectos</li>
+            <li class="nav-bar-li">Contacto</li>   
         </ul>
     </nav>
     <header>
-        <img src="/imagenes/fondo2-porfolio.png" alt="">
-        <img src="/imagenes/portada.png" alt="">
-        <img src="/imagenes/foto cv.png" alt="">
+        <div class="div-primer-plano-header">
+            <div class="div-foto-cv">
+                <img src="/imagenes/foto cv.png" alt="">
+             </div>
+            <div class="texto-header">
+                <h1>Florencia</h1>
+                <h2>Larreategui</h2>
+                <h3>Desarrolladora Frontend y </h3>
+                <h3>Diseñadora creativa</h3>
+            </div>
+       </div>
+        <div class="div-fondo">
+            <div class="portada">
+                <img src="/imagenes/portada.png" alt="">
+            </div>  
+            <div class="borde-portada">
+                <img src="/imagenes/fondo2-porfolio.png" alt="">
+            </div>
+        </div>
+
+             <canvas id="dibujo"></canvas>
     </header>
-    <section class="seccion">
-
+    <section class="seccion-sobre-mi">
+        <div class="texto-sobre-mi">
+            <h1>Sobre mi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sapiente dolorum voluptatem officia esse reprehenderit aspernatur provident a accusantium autem sint pariatur facere adipisci aliquam, voluptatibus quibusdam odit repellendus at!</p>
+        </div>
+        <img src="/imagenes/portada.png" alt="">
+        <img src="/imagenes/fondo-porfolio.png" alt="">
     </section>
-    <main>
 
-    </main>
+    <section class="seccion-tecnologias">
+            <h1>Tecnologias</h1>
+           <div class="iconos-tecnologias">  
+            </div>
+        <img src="/imagenes/portada.png" alt="">
+        <img src="/imagenes/fondo-porfolio.png" alt="">
+    </section>
+    <section class="Proyectos">
+        <h1>Proyectos</h1>
+        <div class="proyectos-generador-memes">
+            <h2>Generador de Memes</h2>
+            <div class="img-generador-memes">
+                <img src="/imagenes/generador-meme.png" alt="">
+            </div>
+        </div>
+        <div class="proyectos-ahorradas">
+            <h2>AhorrADAs</h2>
+            <div class="img-ahorradas">
+                <img src="/imagenes/ahorradas.png" alt="">
+            </div>
+        </div>
+        <div class="proyectos-rick-morty">
+            <h2>Rick y Morty</h2>
+            <div class="img-rick-morty">
+                <img src="/imagenes/rick-y-moty.png" alt="">
+            </div>
+        </div>
+        <div class="not-market">
+            <h2>Not a Market</h2>
+            <div class="img-not-market">
+                    <img src="/imagenes/not-a-market.png" alt="">
+            </div>
+        </div>
+        <div class="recomendame-una-peli">
+            <h2>Recomendame una Peli</h2>
+            <div class="img-recomendame-una-peli">
+                    <img src="/imagenes/recomendame.png" alt="">
+            </div>
+        </div>
+        <div class="gilda-eterna">
+            <h2>Gilda Eterna</h2>
+            <div class="img-gilda-eterna">
+                    <img src="/imagenes/gilda.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <h1>Contacto</h1>
+        <div class="contacto">
+            <h4>Github</h4>
+           <h4>Linkedin</h4>
+            <h4>Mail</h4>
+        </div>
+    </footer>
+
+    
     <script src="index.js"></script>
 </body>
 </html>
