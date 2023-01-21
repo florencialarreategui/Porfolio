@@ -1,11 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300;500;700&display=swap');
+
 body{
     background-color: #B7CA40;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-family: 'Martian Mono', monospace;
 }
+
+body p{
+    font-size: 1.3vw;
+}
+/* ------ NAV ------- */
 .nav-bar{
+    width: 100vw;
 background-color: aquamarine;
+display: flex;
+justify-content: flex-end;
 }
 .nav-bar-ul{
-    width: auto;
     display: flex;
     justify-content: flex-end;
     list-style:none;
@@ -14,24 +30,115 @@ background-color: aquamarine;
 .nav-bar-li{
     margin: 5px;
 }
+.boton-dibujar{
+background-color: #B7CA40;
+width: 10vw;
+
+}
+/* ------ HEADER ------- */
 header{
     position: relative;
-    height: 100vh;
+    margin-top: 4vh;
+}
+
+#dibujo{
+    position: absolute;
+    z-index: 3;
 }
 .div-primer-plano-header{
     display: flex;
     position: absolute;
     z-index: 2;
+    
+    align-items: center;
 }
-.portada img{
-    width: 70vw;
+.div-primer-plano-header h1{
+    font-size: 7vw;
+}
+.div-primer-plano-header h2{
+    font-weight: 500;
+    font-size: 5vw;
+}
+.div-primer-plano-header h3{
+   font-weight: 300;
+   font-size: 2vw;
+}
+.div-foto-cv{
+    background-color: #FB9497;
+}
+.div-foto-cv img{
+    width: 30vw;
+}
+.portada-header img{
+    width: 80vw;
     position: absolute;
     z-index: 1;
     opacity: 0.5; 
-    left: 15%;
-    top: 20%;
 }
-.borde-portada img{
-    width: 90vw;
+.borde-portada-header img{
+    width: 80vw;
     transform: rotate(-179.4deg)
+}
+/* ------ SOBRE MI ------- */
+.seccion-sobre-mi{
+    margin-top: 1vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.texto-sobre-mi{
+    position: absolute;
+    z-index: 2;
+    width: 50vw;
+
+}
+.seccion-plano{
+    position: absolute;
+    z-index: 1;
+}
+.seccion-plano img{
+    width: 70vw;
+    opacity: 0.8; 
+    background-blend-mode: color;
+    border: 1px solid #FB9497;
+    border-radius: 429px;
+    
+}
+.borde-flores img{
+    width: 90vw;
+}
+.seccion-tecnologias{
+    margin-top: 1vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.proyectos img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+footer{
+    margin: 5%;
+    width: 50vw;
+    background-color:#FB9497;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8; 
+    background-blend-mode: color;
+    border: 1px solid #FB9497;
+    border-radius: 429px;
+}
+
+.tamaño-pincel{
+    width: 3vw;
+}
+.rojo{
+    background-color: red;
 }
