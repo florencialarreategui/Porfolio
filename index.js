@@ -31,9 +31,6 @@ const handleClick = () => {
 };
 
 botonDibujar.onclick = () => {
-   navBar.classList.add("rojo");
-}
-botonDibujar.onclick = () => {
    console.log("Funciona")
  }
 

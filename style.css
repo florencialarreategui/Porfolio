@@ -63,11 +63,12 @@ header{
    font-weight: 300;
    font-size: 2vw;
 }
-.div-foto-cv{
+/* .div-foto-cv{
     background-color: #FB9497;
-}
+} */
 .div-foto-cv img{
-    width: 30vw;
+    width: 35vw;
+    filter: drop-shadow(5px -19px 27px #FF6365);
 }
 .portada-header img{
     width: 80vw;
